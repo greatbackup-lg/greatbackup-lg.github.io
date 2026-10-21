@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>greatbackup-lg Backup</title>
+<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.6;color:#222}</style>
+</head>
+<body>
+<h1>greatbackup-lg Backup</h1>
+<p>greatbackup-lg Backup is a personal backup tool used by a single person. It is not offered to the public and has no other users.</p>
+
+<h2>What it does</h2>
+<p>The tool runs on the owner's own computer. It uses the open-source programs <a href="https://rclone.org/">rclone</a> and <a href="https://restic.net/">restic</a> to copy encrypted backup files from that computer into a folder in the owner's own Google Drive, and to read those files back when a restore is needed.</p>
+
+<h2>How it uses Google data</h2>
+<ul>
+<li>It requests only one Google permission: <code>https://www.googleapis.com/auth/drive.file</code>. This lets the tool see and manage only the files it created itself. It cannot see any other file in Google Drive.</li>
+<li>Backup files are encrypted on the owner's computer before upload. The tool does not read, analyze, or share their contents.</li>
+<li>No data is sent to any server other than Google Drive. There is no website account, no tracking, no advertising, and no analytics.</li>
+</ul>
+
+<p><a href="privacy.html">Privacy Policy</a></p>
+</body>
+</html>
